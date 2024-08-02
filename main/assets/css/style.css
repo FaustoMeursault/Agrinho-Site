@@ -1,4 +1,4 @@
-@charset "UTF-8";
+
 
 /* Propriedade aplicável em toda página */
 * {
@@ -18,7 +18,7 @@ body {
 
 header, nav, main, aside, footer {
 
-	background: #a1a1a1;
+	background: #8AA98A;
 	display: flex;
 	margin: 3px;
 }
@@ -30,7 +30,7 @@ header {
 header #logo {
 	display: flex;
 	flex: 0 1 200px;
-	background: #c9c9c9;
+	background: #8AA98A;
 	justify-content: center;
 	align-items: center;
 }
@@ -66,7 +66,78 @@ aside {
 
 footer {
 	flex: 1 1 100vw;
+	background-color: #253529;
+	flex-direction: column;
 }
+
+
+	.Container-footer{
+		width: 100%;
+		padding: 70px 30px 20px ;
+		
+	}
+	.Icons{
+		display: flex;
+		justify-content: center;
+	}
+	.Icons a{
+		text-decoration: none;
+		padding:  10px;
+		background-color: white;
+		margin: 10px;
+		border-radius: 50%;
+	}
+	.Icons a i{
+		font-size: 2em;
+		color: #253529;
+		opacity: 0,9;
+	}
+	
+	/* Efeitos ao Passar o Mouse */
+	.Icons a:hover{
+		background-color: #253529;
+		transition: 0.5s;
+	}
+	.Icons a:hover i{
+		color: white;
+		transition: 0.5s;
+	}
+	.Nav-footer{
+		margin: 30px 0;
+	}
+	.Nav-footer ul{
+		display: flex;
+		justify-content: center;
+		list-style-type: none;
+	}
+	.Nav-footer ul li a{
+		color:white;
+		margin: 20px;
+		text-decoration: none;
+		font-size: 1.3em;
+		opacity: 0.7;
+		transition: 0.5s;
+	
+	}
+	.Nav-footer ul li a:hover{
+		opacity: 1;
+	}
+	.Bottom-footer{
+		background-color: #253529;
+		padding: 20px;
+		text-align: center;
+	}
+	.Bottom-footer p{
+		color: white;
+	}
+	.designer-criador{
+		opacity: 0.7;
+		text-transform: uppercase;
+		letter-spacing: 1px;
+		font-weight: 400;
+		margin: 0px 5px;
+	}
+
 
 a {
 	text-decoration: none;
@@ -105,4 +176,17 @@ a {
 	nav a {
 		margin: 3%;
 	}
+
+	.Nav-footer ul{
+        flex-direction: column;
+    } 
+    .Nav-footer ul li{
+        width:100%;
+        text-align: center;
+        margin: 10px;
+    }
+    .Icons a{
+        padding: 8px;
+        margin: 4px;
+    }
 }
