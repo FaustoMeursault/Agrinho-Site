@@ -1,54 +1,73 @@
 
 
+
 /* Propriedade aplicável em toda página */
 * {
-	margin: 0;
+	
 	padding: 0;
+	margin: 0;
 	box-sizing: border-box;
 }
 
 /* Configurações Gerais para parte do Body/Corpo */
 body {
-	display: flex;
-	flex-wrap: wrap;
-	flex: 1 1 100vw;
 	margin: 3px;
+	background-color: #E4E6D9;
+	display: flex;
+	flex: 1 1 100vw;
+	flex-wrap: wrap;
 }
 
 
-header, nav, main, aside, footer {
-
+header,
+nav,
+main,
+aside {
+	margin: 3px;
 	background: #8AA98A;
 	display: flex;
-	margin: 3px;
 }
 
 header {
 	flex: 1 1 100vw;
+	display: flex;
+	justify-content: center;
 }
 
 header #logo {
+	background: #8AA98A;
+	color: white;
+	text-transform: uppercase;
+	text-align: center;
 	display: flex;
 	flex: 0 1 200px;
-	background: #8AA98A;
 	justify-content: center;
 	align-items: center;
 }
 
-#openMenu, #closeMenu {
-	border: none;
+.logo-img{
+	padding: 5px;
+	width: 5px;
+	width: 204px;
+	height: 305 px;
+}
+
+#openMenu,
+#closeMenu {
+	padding: 0px 5px 0px 5px;
 	background: none;
+	display: none;
 	font-size: 30px;
 	font-weight: bold;
-	padding: 0px 5px 0px 5px;
+	border: none;
 	cursor: pointer;
-	display: none;
+
 }
 
 nav {
+	flex: 1 1 100%;
 	justify-content: center;
 	align-items: center;
-	flex: 1 1 100%;
 }
 
 nav a {
@@ -65,78 +84,93 @@ aside {
 }
 
 footer {
-	flex: 1 1 100vw;
 	background-color: #253529;
+	flex: 1 1 100vw;
 	flex-direction: column;
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	height: 2,5rem;
 }
 
 
-	.Container-footer{
-		width: 100%;
-		padding: 70px 30px 20px ;
-		
-	}
-	.Icons{
-		display: flex;
-		justify-content: center;
-	}
-	.Icons a{
-		text-decoration: none;
-		padding:  10px;
-		background-color: white;
-		margin: 10px;
-		border-radius: 50%;
-	}
-	.Icons a i{
-		font-size: 2em;
-		color: #253529;
-		opacity: 0,9;
-	}
-	
-	/* Efeitos ao Passar o Mouse */
-	.Icons a:hover{
-		background-color: #253529;
-		transition: 0.5s;
-	}
-	.Icons a:hover i{
-		color: white;
-		transition: 0.5s;
-	}
-	.Nav-footer{
-		margin: 30px 0;
-	}
-	.Nav-footer ul{
-		display: flex;
-		justify-content: center;
-		list-style-type: none;
-	}
-	.Nav-footer ul li a{
-		color:white;
-		margin: 20px;
-		text-decoration: none;
-		font-size: 1.3em;
-		opacity: 0.7;
-		transition: 0.5s;
-	
-	}
-	.Nav-footer ul li a:hover{
-		opacity: 1;
-	}
-	.Bottom-footer{
-		background-color: #253529;
-		padding: 20px;
-		text-align: center;
-	}
-	.Bottom-footer p{
-		color: white;
-	}
-	.designer-criador{
-		opacity: 0.7;
-		text-transform: uppercase;
-		letter-spacing: 1px;
-		font-weight: 400;
-		margin: 0px 5px;
-	}
+.Container-footer {
+	width: 100%;
+	padding: 70px 30px 20px;
+
+}
+
+.Icons {
+	display: flex;
+	justify-content: center;
+}
+
+.Icons a {
+	padding: 10px;
+	margin: 10px;
+	background-color: white;
+	text-decoration: none;
+	border-radius: 50%;
+}
+
+.Icons a i {
+	font-size: 2em;
+	color: #253529;
+	opacity: 0, 9;
+}
+
+/* Efeitos ao Passar o Mouse */
+.Icons a:hover {
+	background-color: #253529;
+	transition: 0.5s;
+}
+
+.Icons a:hover i {
+	color: white;
+	transition: 0.5s;
+}
+
+.Nav-footer {
+	margin: 5px 0;
+}
+
+.Nav-footer ul {
+	display: flex;
+	justify-content: center;
+	list-style-type: none;
+}
+
+.Nav-footer ul li a {
+	margin: 20px;
+	color: white;
+	text-decoration: none;
+	font-size: 1.3em;
+	opacity: 0.7;
+	transition: 0.5s;
+
+}
+
+.Nav-footer ul li a:hover {
+	opacity: 1;
+}
+
+.Bottom-footer {
+	padding: 20px;
+	background-color: #253529;
+	text-align: center;
+}
+
+.Bottom-footer p {
+	color: white;
+}
+
+.designer-criador {
+	opacity: 0.7;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	font-weight: 400;
+	margin: 0px 5px;
+}
 
 
 a {
@@ -145,7 +179,9 @@ a {
 }
 
 @media only screen and (max-width: 717px) {
-	#openMenu, #closeMenu {
+
+	#openMenu,
+	#closeMenu {
 		display: block;
 	}
 
@@ -159,11 +195,18 @@ a {
 		top: 15px;
 	}
 
+
+	.logo-img{
+		width: 120px;
+		height: 75px;
+	}
+
+
 	nav {
-		position: fixed;
 		width: 100vw;
 		height: 100vh;
 		background: rgba(255, 255, 255, 0.8);
+		position: fixed;
 		flex-direction: column;
 		align-items: center;
 		justify-content: center;
@@ -177,16 +220,18 @@ a {
 		margin: 3%;
 	}
 
-	.Nav-footer ul{
-        flex-direction: column;
-    } 
-    .Nav-footer ul li{
-        width:100%;
-        text-align: center;
-        margin: 10px;
-    }
-    .Icons a{
-        padding: 8px;
-        margin: 4px;
-    }
+	.Nav-footer ul {
+		flex-direction: column;
+	}
+
+	.Nav-footer ul li {
+		width: 100%;
+		text-align: center;
+		margin: 10px;
+	}
+
+	.Icons a {
+		padding: 8px;
+		margin: 4px;
+	}
 }
