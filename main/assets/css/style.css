@@ -1,6 +1,3 @@
-
-
-
 /* Propriedade aplicável em toda página */
 * {
 	
@@ -87,10 +84,8 @@ footer {
 	background-color: #253529;
 	flex: 1 1 100vw;
 	flex-direction: column;
-	position: absolute;
-	bottom: 0;
-	width: 100%;
-	height: 2,5rem;
+	margin-top: 100%;
+	
 }
 
 
