@@ -8,6 +8,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
 	<link rel="short icon" type="image/png" href="/assets/img/favicons/favicon-16x16.png"/>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 	<title>Agrinho</title>
 </head>
 
@@ -17,7 +18,7 @@
 	<!-- Elementos que compõe o cabeçalho. -->
 	<header>
 		<a href="./index.html" id="logo">Do Campo à Cidade, Colhendo Oportunidades</a>
-		<img class="logo-img" src="assets/img/agrinho_2024.png" alt="Logo com Imagem do Agrinho 2024">
+		<img class="logo-img" src="assets/img/agrinho_2024.png" alt="Logo com a Imagem do Agrinho 2024">
 			
 		<!--Button/Botão para Abrir Menu-->
 		<button id="openMenu">&#9776;</button>
@@ -29,23 +30,58 @@
 		<button id="closeMenu">X</button>
 
 		<a href="#">Home</a>
-		<a href="#">Principal</a>
-		<a href="">Fotos</a>
+		<a href="#principal">Principal</a>
+		<a href="#fotos">Fotos</a>
 	</nav>
 
 	<!-- Conteúdo Principal da Página -->
-	<main>Main</main>
+	<main><a name="principal">Main</a></main>
 
 	<!-- Conteúdo relacionado ao Principal/Main -->
-	<aside>Aside</aside>
+	<aside><a name="fotos"></a>
+		<section id="galery">
+			<div class="foto" id="foto1">
+				<a href="#foto1">
+					<img src="assets/img/agricultura_precisao.jpg" alt="Foto de um Drone Sobrevoando uma Plantação" title="https://www.gettyimages.com.br/detail/foto/drone-with-camera-in-field-imagem-royalty-free/881831452?adppopup=true">
+				</a>
+				<div class="descricao">
+					Descrição da Imagem<br><a href="#fechar">Fechar</a>
+				</div>
+			</div>
+			<div class="foto" id="foto2">
+				<a href="#foto2">
+					<img src="assets/img/agricultura_vertical.jpg" alt="Foto de uma Estufa Vertical">
+				</a>
+				<div class="descricao">
+					Descrição da Imagem<br><a href="#fechar">Fechar</a>
+				</div>
+			</div>
+			<div class="foto" id="foto3">
+				<a href="#foto3">
+					<img src="assets/img/irrigacao.jpg" alt="Foto de um Drone Sobrevoando uma Plantação">
+				</a>
+				<div class="descricao">
+					Descrição da Imagem<br><a href="#fechar">Fechar</color:></a>
+				</div>
+			</div>
+			<div class="foto" id="foto4">
+				<a href="#foto4">
+					<img src="assets/img/agricultura_precisao.jpg" alt="Foto de um Drone Sobrevoando uma Plantação">
+				</a>
+				<div class="descricao">
+					Descrição da Imagem<br><a href="#fechar">Fechar</color:></a>
+				</div>
+			</div>
+		</section>
+	</aside>
 
 	<!-- Contéudo Final com links -->
 	<footer>
 		<section class="Container-footer">
 			<div class="Icons">
-				<a href=""><i class="fa-brands fa-instagram"></i></a>
-				<a href=""><i class="fa-brands fa-google-plus"></i></a>
-				<a href=""><i class="fa-brands fa-youtube"></i></a>
+				<a href="https://www.instagram.com/colegioest.14de?igsh=anZzazUzYmoxbTF3"><i class="fa-brands fa-instagram"></i></a>
+				<a href="https://www.sistemafaep.org.br/agrinho/"><i class="fa-brands fa-google-plus"></i></a>
+				<a href="https://m.facebook.com/Col14deDezembro/"><i class="fa-brands fa-facebook"></i></a>
 			</div>
 			<div class="Nav-footer">
 				<ul><li><a href="">Home</a></li>

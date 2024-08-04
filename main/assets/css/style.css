@@ -6,15 +6,15 @@
 	box-sizing: border-box;
 }
 
+
 /* Configurações Gerais para parte do Body/Corpo */
 body {
 	margin: 3px;
-	background-color: #E4E6D9;
+	background-color: #fff;
 	display: flex;
 	flex: 1 1 100vw;
 	flex-wrap: wrap;
 }
-
 
 header,
 nav,
@@ -25,6 +25,8 @@ aside {
 	display: flex;
 }
 
+
+/* Configurações Gerais para parte do Header/Cabeçalho */
 header {
 	flex: 1 1 100vw;
 	display: flex;
@@ -72,22 +74,60 @@ nav a {
 	font-size: 15pt;
 }
 
+
+/* Configurações Gerais para parte do Main/Principal */
 main {
 	flex: 20 1 500px;
 }
 
+
+/* Configurações Gerais para parte do Aside/Relacionados */
 aside {
 	flex: 1 1 200px;
 }
 
+#galery > div{
+	width: 100%;
+	padding: 10px;
+	box-sizing: border-box;
+}
+
+.foto img{
+	width: 100%;
+	display: block;
+}
+
+.descricao{
+	display: none;
+}
+
+.foto:target{
+	position: fixed;
+	padding: 5px;
+	width: 50%;
+	top: 15px;
+	left: 35%;
+	border: solid 1px #333;
+	border-radius: 5px;
+	box-shadow: 0 0 25px 10px #000;
+	background-color: #8AA98A;
+}
+
+.foto:target .descricao{
+	display: block;
+	text-align: center;
+	color: #E4E6D9;
+}
+
+
+/* Configurações Gerais para parte do Footer/Rodapé */
 footer {
 	background-color: #253529;
 	flex: 1 1 100vw;
 	flex-direction: column;
-	margin-top: 100%;
+	margin-top: 0.5%;
 	
 }
-
 
 .Container-footer {
 	width: 100%;
@@ -105,7 +145,8 @@ footer {
 	margin: 10px;
 	background-color: white;
 	text-decoration: none;
-	border-radius: 50%;
+	border-radius: 40%;
+
 }
 
 .Icons a i {
@@ -142,7 +183,6 @@ footer {
 	font-size: 1.3em;
 	opacity: 0.7;
 	transition: 0.5s;
-
 }
 
 .Nav-footer ul li a:hover {
@@ -167,12 +207,13 @@ footer {
 	margin: 0px 5px;
 }
 
-
 a {
 	text-decoration: none;
 	color: inherit;
 }
 
+
+/* Configurações Gerais para parte do Media Query para telas menores */
 @media only screen and (max-width: 717px) {
 
 	#openMenu,
@@ -189,7 +230,6 @@ a {
 		right: 15px;
 		top: 15px;
 	}
-
 
 	.logo-img{
 		width: 120px;
